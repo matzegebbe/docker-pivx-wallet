@@ -1,1 +1,14 @@
 # docker-pivx-wallet
+
+```
+version: '3'
+services:
+  wallet:
+    image: matzeihn/pivx:latest
+    deploy:
+      replicas: 1    
+    ports:
+      - "51472:51472"
+    volumes: 
+      - /opt/pivx/data/:/home/pivx/.pivx/
+```
