@@ -2,7 +2,7 @@ FROM debian:stretch-slim
 
 ENV PIVX_VERSION=3.2.1
 ENV PIVX_USER=pivx
-ENV PIVX_URL=https://github.com/PIVX-Project/PIVX/releases/download/v3.2.1/pivx-3.2.1.tar.gz
+ENV PIVX_URL=https://github.com/PIVX-Project/PIVX/releases/download/v3.2.1/pivx-3.2.1-x86_64-linux-gnu.tar.gz
 ENV PIVX_CONF=/home/$PIVX_USER/.pivx/pivx.conf
 
 RUN apt-get -qq update && \
