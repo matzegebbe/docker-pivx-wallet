@@ -1,8 +1,8 @@
-FROM debian:stretch-slim
+FROM debian:buster-slim
 
-ENV PIVX_VERSION=3.4.0
+ENV PIVX_VERSION=4.0.0
 ENV PIVX_USER=pivx
-ENV PIVX_URL=https://github.com/PIVX-Project/PIVX/releases/download/v3.4.0/pivx-3.4.0-x86_64-linux-gnu.tar.gz
+ENV PIVX_URL=https://github.com/PIVX-Project/PIVX/releases/download/v4.0.0/pivx-4.0.0-x86_64-linux-gnu.tar.gz
 ENV PIVX_CONF=/home/$PIVX_USER/.pivx/pivx.conf
 
 RUN apt-get -qq update && \
