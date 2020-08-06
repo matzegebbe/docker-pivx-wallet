@@ -1,6 +1,6 @@
 FROM debian:buster-slim
 
-ENV PIVX_VERSION=4.2.0.
+ENV PIVX_VERSION=4.2.0
 ENV PIVX_USER=pivx
 ENV PIVX_URL=https://github.com/PIVX-Project/PIVX/releases/download/v4.2.0/pivx-4.2.0-x86_64-linux-gnu.tar.gz
 ENV PIVX_CONF=/home/$PIVX_USER/.pivx/pivx.conf
