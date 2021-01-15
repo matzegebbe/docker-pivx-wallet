@@ -19,10 +19,13 @@ ln -sf /opt/pivx/bin/pivx-cli /usr/local/bin/pivx-cli && \
 ln -sf /opt/pivx/bin/pivx-tx /usr/local/bin/pivx-tx && \
 adduser --uid 1000 --system ${PIVX_USER} && \
 mkdir -p /home/${PIVX_USER}/.pivx/ && \
+mkdir -p /home/${PIVX_USER}/.pivx-params/ && \
+cp /opt/pivx/share/pivx/* /home/${PIVX_USER}/.pivx-params/ && \
 chown -R ${PIVX_USER} /home/${PIVX_USER} && \
 echo "success: $PIVX_CONF"
 
 USER pivx
+
 RUN echo "rpcuser=pivx" > ${PIVX_CONF} && \
         echo "rpcpassword=`pwgen 32 1`" >> ${PIVX_CONF} && \
         echo "Success"
