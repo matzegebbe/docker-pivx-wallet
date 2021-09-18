@@ -1,8 +1,8 @@
-FROM debian:buster-slim
+FROM debian:bullseye-slim
 
-ENV PIVX_VERSION=5.2.0.1
+ENV PIVX_VERSION=5.3.0
 ENV PIVX_USER=pivx
-ENV PIVX_URL=https://github.com/PIVX-Project/PIVX/releases/download/v5.2.0.1/pivx-5.2.0.1-x86_64-linux-gnu.tar.gz
+ENV PIVX_URL=https://github.com/PIVX-Project/PIVX/releases/download/v5.3.0/pivx-5.3.0-x86_64-linux-gnu.tar.gz
 ENV PIVX_CONF=/home/$PIVX_USER/.pivx/pivx.conf
 
 RUN apt-get -qq update && \
